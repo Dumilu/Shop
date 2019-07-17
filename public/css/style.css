@@ -1,0 +1,121 @@
+/* Файл mixins.less */
+/* Файл scaffolding.less */
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "OpenSans", sans-serif;
+  color: #000000;
+  font-style: normal;
+  background-color: #ffffff;
+  outline: none;
+  background: #ffffff;
+}
+body::before {
+  display: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* blocks */
+/* Файл blocks/layout-container.less */
+/* Файл blocks/page-header.less */
+.page-header {
+  width: 260px;
+  padding: 0;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  position: relative;
+  background: navy;
+}
+.page-header__logo {
+  margin: 20px auto;
+}
+.page-header__logo-image {
+  height: 26px;
+}
+@media (min-width: 768px) {
+  .page-header__logo-image {
+    -webkit-box-ordinal-group: 3;
+            order: 2;
+    height: 51px;
+  }
+}
+@media (min-width: 1250px) {
+  .page-header__logo-image {
+    height: 74px;
+  }
+}
+.page-header,
+.page-header__logo {
+  outline: none;
+  background: #ffffff;
+}
+.page-header::before,
+.page-header__logo::before {
+  display: none;
+}
+.page-header__logo {
+  background: rgba(255, 255, 255, 0.5);
+}
+/* Файл blocks/main-nav.less */
+.main-nav {
+  background: tomato;
+}
+.main-nav__toggle {
+  position: absolute;
+  right: 0px;
+  top: 20px;
+  font-size: 0px;
+}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .main-nav .main-nav {
+    width: auto;
+    margin: 0;
+  }
+  .main-nav .main-nav__wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    width: px;
+    margin: 0 auto;
+  }
+}
+@media (min-width: 1250px) {
+  .main-nav__wrapper {
+    width: 960px;
+  }
+  .site-list {
+    width: 780px;
+  }
+  .user-list {
+    width: 160px;
+  }
+}
+/* Файл blocks/site-list.less */
+/* Файл blocks/page-main.less */
+/* Файл blocks/showcase.less */
+/* Файл blocks/extra-nav.less */
+/* Файл blocks/catalog.less */
+/* Файл blocks/products.less */
+/* Файл blocks/cart-product.less */
+/* Файл blocks/advantages.less */
+/* Файл blocks/reviews.less */
+/* Файл blocks/contacts.less */
+/* Файл blocks/page-footer.less */
+/* Файл blocks/social.less */
+/* Файл blocks/copyright.less */

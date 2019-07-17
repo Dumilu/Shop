@@ -1,0 +1,84 @@
+/* Файл mixins.less */
+/* Файл scaffolding.less */
+body {
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  line-height: 27px;
+  font-family: "Arial", sans-serif;
+  color: #f7f4f1;
+  font-style: normal;
+  background-color: #292929;
+  outline: none;
+  background: #292929;
+}
+body::before {
+  display: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+/* blocks */
+/* Файл blocks/page-header.less */
+/* Файл blocks/main-nav.less */
+.main-nav {
+  width: 320px;
+  margin: 0 auto;
+}
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  /* Временно для сетки */
+  min-height: 50px;
+}
+.site-list {
+  /* Временно для сетки */
+  min-height: 255px;
+}
+@media (min-width: 768px) {
+  .main-nav {
+    width: auto;
+    margin: 0;
+  }
+  .main-nav__wrapper {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: justify;
+            justify-content: space-between;
+    width: 640px;
+    margin: 0 auto;
+  }
+  .site-list {
+    width: 570px;
+    /* Временно для сетки */
+    min-height: 70px;
+  }
+  .user-list {
+    width: 60px;
+  }
+}
+@media (min-width: 1200px) {
+  .main-nav__wrapper {
+    width: 960px;
+  }
+  .site-list {
+    width: 780px;
+  }
+  .user-list {
+    width: 160px;
+  }
+}
+/* Файл blocks/site-list.less */
+/* Файл blocks/extra-nav.less */
+/* Файл blocks/page-main.less */
+/* Файл blocks/catalog.less */
+/* Файл blocks/cart-product.less */
+/* Файл blocks/advantages.less */
+/* Файл blocks/reviews.less */
+/* Файл blocks/page-footer.less */
+/* Файл blocks/contacts.less */
+/* Файл blocks/social.less */
+/* Файл blocks/copyright.less */
